@@ -1,0 +1,14 @@
+{
+  "name": "drupal/spotify_client",
+  "type": "drupal-module",
+  "description": "Http Client of Spotify. Test Bits Americas",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/spotify_client",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/spotify_client",
+    "source": "http://cgit.drupalcode.org/spotify_client"
+  },
+  "require": { }
+}

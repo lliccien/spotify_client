@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file
+ * Contains spotify_client.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function spotify_client_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the spotify_client module.
+    case 'help.page.spotify_client':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Http Client of Spotify. Test Bits Americas') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function spotify_client_theme()
+{
+    return [
+        'new_releases_page' => [
+            'variables' => ['releases' => NULL],
+            'template' => 'new-releases-page'
+        ],
+        'artist_page' => [
+            'variables' => ['artist' => NULL,
+                            'tracks' => NULL],
+            'template' => 'artist-page'
+        ]
+    ];
+}

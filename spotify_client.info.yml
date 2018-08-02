@@ -1,0 +1,5 @@
+name: 'Spotify Client'
+type: module
+description: 'Http Client of Spotify. Test Bits Americas'
+core: 8.x
+package: 'Custom'

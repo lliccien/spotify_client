@@ -1,0 +1,21 @@
+<div>
+    <h2>{{ artist.name }}</h2>
+    <img src="{{ artist.images[2].url }}" alt="">
+    <a class="button" href="{{ path('spotify_client.new-releases') }}"> volver a Lanzamientos</a>
+</div>
+
+<table >
+    <tr>
+        <th>Foto</th>
+        <th>Album</th>
+        <th>Canción</th>
+    </tr>
+    {% for track in tracks.tracks %}
+        <tr>
+            <td><img src="{{ track.album.images[2].url }}" alt="">  </td>
+            <td>{{ track.album.name }}</td>
+            <td>{{ track.name }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
